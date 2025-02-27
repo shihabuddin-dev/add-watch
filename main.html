@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Smart Watch Product</title>
   <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-  <link href="/dist/styles.css" rel="stylesheet">
+  
 
 </head>
 
@@ -50,13 +50,13 @@
           <div class="mt-4">
             <span class="text-sm font-semibold text-gray-700">Band Color</span>
             <div class="flex items-center mt-1 space-x-2">
-              <button class="w-6 h-6 rounded-full bg-purple-500 border-2 border-purple-600 ring-button"
+              <button class="w-6 h-6 rounded-full bg-purple-500 border-2 border-purple-700 ring-button"
                 id="purple-color"></button>
-              <button class="w-6 h-6 rounded-full bg-teal-500 border-2 border-gray-300 ring-button"
+              <button class="w-6 h-6 rounded-full bg-teal-500 border-2 border-gray-100 ring-button"
                 id="teal-color"></button>
-              <button class="w-6 h-6 rounded-full bg-cyan-500 border-2 border-gray-300 ring-button"
+              <button class="w-6 h-6 rounded-full bg-cyan-500 border-2 border-gray-100 ring-button"
                 id="cyan-color"></button>
-              <button class="w-6 h-6 rounded-full bg-gray-700 border-2 border-gray-300 ring-button"
+              <button class="w-6 h-6 rounded-full bg-gray-700 border-2 border-gray-100 ring-button"
                 id="gray-color"></button>
             </div>
           </div>
@@ -65,16 +65,16 @@
           <div class="mt-2">
             <span class="text-sm font-semibold text-gray-700">Wrist Size</span>
             <div class="grid grid-cols-4 gap-2 mt-2">
-              <button class="px-4 py-2 border border-gray-300 rounded-lg text-sm hover:bg-gray-100" id="size-S">
+              <button onclick="selectWristSize('S')" class="px-4 py-2 border border-gray-300 rounded-lg text-sm hover:bg-gray-100" id="size-S">
                 S $69
               </button>
-              <button class="px-4 py-2 border border-gray-300 rounded-lg text-sm hover:bg-gray-100" id="size-M">
+              <button onclick="selectWristSize('M')" class="px-4 py-2 border border-gray-300 rounded-lg text-sm hover:bg-gray-100" id="size-M">
                 M $79
               </button>
-              <button class="px-4 py-2 border border-gray-300 rounded-lg text-sm hover:bg-gray-100" id="size-L">
+              <button onclick="selectWristSize('L')" class="px-4 py-2 border border-gray-300 rounded-lg text-sm hover:bg-gray-100" id="size-L">
                 L $89
               </button>
-              <button class="px-4 py-2 border border-gray-300 rounded-lg text-sm hover:bg-gray-100" id="size-XL">
+              <button onclick="selectWristSize('XL')" class="px-4 py-2 border border-gray-300 rounded-lg text-sm hover:bg-gray-100" id="size-XL">
                 XL $99
               </button>
             </div>
